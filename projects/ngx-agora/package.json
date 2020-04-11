@@ -1,6 +1,6 @@
 {
   "name": "ngx-agora",
-  "version": "1.5.14",
+  "version": "2.0.1",
   "schematics": "./schematics/collection.json",
   "peerDependencies": {
     "@angular/common": "^7.0.0",
@@ -22,10 +22,6 @@
     "copy:collection": "cp schematics/src/collection.json ../../dist/ngx-agora/schematics/collection.json",
     "postbuild": "mkdir ../../dist/ngx-agora/schematics && npm run copy:files && npm run copy:schemas && npm run copy:collection"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/drew-thompson/ngx-agora.git"
-  },
   "keywords": [
     "angular",
     "library",
@@ -36,10 +32,9 @@
     "conferencing",
     "typescript"
   ],
-  "author": "Drew Thompson",
+  "author": "11Health",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/drew-thompson/ngx-agora/issues"
-  },
-  "homepage": "https://github.com/drew-thompson/ngx-agora#readme"
+  "publishConfig": {
+    "registry": "http://npmjs.11health.org:8080/"
+  }
 }
